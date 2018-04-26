@@ -40,7 +40,7 @@ public class ListNode {
         StringBuilder stringBuilder = new StringBuilder(10);
         ListNode current = next;
         while(current != null) {
-            stringBuilder.append(current.data);
+            stringBuilder.insert(0, current.data);
             current = current.next;
         }
         return stringBuilder.toString();
