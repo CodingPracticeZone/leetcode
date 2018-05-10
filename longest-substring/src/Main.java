@@ -2,7 +2,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        String s = "ababcbb";
+        String s = "ababcb";
         System.out.printf("%s: %d", s, lengthOfLongestSubstring(s));
     }
 
@@ -19,7 +19,6 @@ public class Main {
                     }
                 }
                 if(repeat) {
-                    i = j;
                     break;
                 } else if(j - i + 1 > len) {
                     len = j - i + 1;
